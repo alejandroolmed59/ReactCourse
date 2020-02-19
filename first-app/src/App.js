@@ -15,8 +15,8 @@ function App() {
       <header className="App-header">
         <h1>Weird Stuff...</h1>
         {
-          arr.map((element)=>{
-           return <Card name={element.name}  career= {element.career} email={element.email} />
+          arr.map((element, index)=>{
+           return <Card index={index+1} name={element.name}  career= {element.career} email={element.email} />
           })
         }
       </header>
